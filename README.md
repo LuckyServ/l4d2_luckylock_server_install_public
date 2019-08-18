@@ -49,8 +49,8 @@ source .bashrc
 ln -s Steam/steamapps/common/l4d2/left4dead2/ l4d2
 
 # Copy files
-git clone https://github.com/LuckyServ/l4d2_luckylock_server_install.git
-cp -r l4d2_luckylock_server_install/* l4d2/
+git clone https://github.com/LuckyServ/l4d2_luckylock_server_install_public.git
+cp -r l4d2_luckylock_server_install_public/* l4d2/
 
 ln -s l4d2/addons/sourcemod/configs/admins_simple.ini admins_simple.ini
 ```
