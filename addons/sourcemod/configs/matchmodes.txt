@@ -1,0 +1,93 @@
+"MatchModes"
+{
+	"ZoneMod 1.9.4"
+	{
+		"zonemod"
+		{
+			"name" "4v4 ZoneMod"
+		}
+		"zm3v3"
+		{
+			"name" "3v3 ZoneMod"
+		}
+		"zm2v2"
+		{
+			"name" "2v2 ZoneMod"
+		}
+		"zm1v1"
+		{
+			"name" "1v1 ZoneMod"
+		}
+	}
+	"Apex 1.1.2"
+	{
+		"apex"
+		{
+			"name" "4v4 Apex"
+		}
+	}
+	"Equilibrium 3.0c"
+	{
+		"eq"
+		{
+			"name" "4v4 EQ"
+		}
+		"eq3v3"
+		{
+			"name" "3v3 EQ"
+		}
+		"eq2v2"
+		{
+			"name" "2v2 EQ"
+		}
+		"eq1v1"
+		{
+			"name" "1v1 EQ"
+		}
+	}
+	"OpenMod 2"
+	{
+		"openmod"
+		{
+			"name" "4v4 OpenMod"
+		}
+	}
+	"Scavogl"
+	{
+		"scavogl4v4"
+		{
+			"name" "4v4 Scavogl"
+		}
+		"scavogl3v3"
+		{
+			"name" "3v3 Scavogl"
+		}
+		"scavogl2v2"
+		{
+			"name" "2v2 Scavogl"
+		}
+		"scavogl1v1"
+		{
+			"name" "1v1 Scavogl"
+		}
+	}
+	"Scavhunt"
+	{
+		"scavhunt4v4"
+		{
+			"name" "4v4 Scavhunt"
+		}
+		"scavhunt3v3"
+		{
+			"name" "3v3 Scavhunt"
+		}
+		"scavhunt2v2"
+		{
+			"name" "2v2 Scavhunt"
+		}
+		"scavhunt1v1"
+		{
+			"name" "1v1 Scavhunt"
+		}
+	}
+}
