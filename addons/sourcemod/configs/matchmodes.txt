@@ -45,6 +45,13 @@
 			"name" "1v1 EQ"
 		}
 	}
+	"ProMod Elite 1.1"
+	{
+		"pmelite"
+		{
+			"name" "4v4 ProMod Elite"
+		}
+	}
 	"OpenMod 2"
 	{
 		"openmod"
