@@ -74,3 +74,13 @@ pkill srcds_
 Type in the command `chmod u+x s`.  
 
 To start / restart the server, simply do: `./s`.
+
+# Custom maps
+
+Navigate to your addons folder: `cd l4d2/addons` and put the script below in a file named `install_maps` and run it as a bash script: `bash install_maps`
+
+```
+wget http://192.223.24.83/AllMapsInOneZipFile.zip
+unzip AllMapsInOneZipFile.zip -d .
+rm -f AllMapsInOneZipFile.zip
+```
