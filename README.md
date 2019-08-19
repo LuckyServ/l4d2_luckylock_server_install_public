@@ -8,6 +8,7 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - `!mix` command for team selection (`!stopmix` to stop the mix process at any time)
 - Ready-up menu that doesn't completely hide the chat
 - Extra configs (hit me up if you want me to add your config to this)
+- Easy custom maps installation (bottom of this README)
 
 # Configs
 
