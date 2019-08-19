@@ -1,6 +1,13 @@
 # L4D2 Luckylock Server Install
 
-This repository contains all the files for a clean L4D2 competitive server updated to **SourceMod 1.9.0.6281**.
+This repository contains all the files for a clean L4D2 competitive server updated to **SourceMod 1.9.0.6281**. It contains files from the [L4D2 Competitive Rework](https://github.com/LuckyServ/L4D2-Competitive-Rework) but the missing / broken plugins have been fixed. It also contains a few extra features such as:
+
+- Installation steps (below)
+- Automatic server restart after every game (you can do a manual restart with `!rs`)
+- Advanced crash logs thanks to [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703&)
+- `!mix` command for team selection
+- Ready-up menu that doesn't completely hide the chat
+- Extra configs
 
 # Configs
 
