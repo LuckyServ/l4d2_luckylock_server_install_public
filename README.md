@@ -57,9 +57,9 @@ ln -s l4d2/addons/sourcemod/configs/admins_simple.ini admins_simple.ini
 
 ## Configuration
 
-Edit `cfg/server.cfg` to your preferences.  
-Edit `addons/sourcemod/configs/core.cfg` and put your own SteamID64 for `MinidumpAccount`.  
-You can view your crash reports at [this website](https://crash.limetech.org/).  
+- Edit `cfg/server.cfg` to your preferences.  
+- Edit `addons/sourcemod/configs/core.cfg` and put your own SteamID64 for `MinidumpAccount`. You can view your crash reports at [this website](https://crash.limetech.org/).
+- Edit `addons/sourcemod/config/admins_simple.ini` and add yourself as admin instead of me.
 
 ## Start the server
 
