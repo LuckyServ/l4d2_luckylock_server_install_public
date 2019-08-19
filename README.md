@@ -20,7 +20,7 @@ This repository contains all the files for a clean L4D2 competitive server updat
 
 # Install Steps
 
-## Prerequisites
+## 1) Installing Prerequisites
 
 Login as `root` on your server, put the script below in a file named `install_pre` and run it as a bash script: `bash install_pre`.
 
@@ -36,7 +36,7 @@ adduser steam
 usermod -aG sudo steam
 ```
 
-## L4D2 Server
+## 2) Installing the L4D2 Server
 
 Login as `steam` on your server, put the script below in a file named `install_l4d2` and run it as a bash script: `bash install_l4d2`
 
@@ -62,13 +62,13 @@ cp -r l4d2_luckylock_server_install_public/* l4d2/
 ln -s l4d2/addons/sourcemod/configs/admins_simple.ini admins_simple.ini
 ```
 
-## Configuration
+## 3) Editing Configuration Files
 
 - Edit `l4d2/cfg/server.cfg` to your preferences.  
 - Edit `l4d2/addons/sourcemod/configs/core.cfg` and put your own SteamID64 for `MinidumpAccount`. You can view your crash reports at [this website](https://crash.limetech.org/).
 - Edit `l4d2/addons/sourcemod/config/admins_simple.ini` and add yourself as admin instead of me.
 
-## Start the server
+## 4) Starting the Server
 
 Save this below as a file named `s` in your home directory.  
 
