@@ -5,7 +5,7 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - Installation steps (below)
 - Automatic server restart after every game (you can do a manual restart with `!rs`)
 - Advanced crash logs thanks to [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703&)
-- `!mix` command for team selection
+- `!mix` command for team selection (`!stopmix` to stop the mix process at any time)
 - Ready-up menu that doesn't completely hide the chat
 - Extra configs (hit me up if you want me to add your config to this)
 
