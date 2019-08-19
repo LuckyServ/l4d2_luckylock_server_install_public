@@ -21,6 +21,8 @@ This repository contains all the files for a clean L4D2 competitive server updat
 
 # Install Steps
 
+First of all, make sure your server is running **Ubuntu 18.04** or earlier. A L4D2 server on Ubuntu 19 is glitchy (you will see blood coming out of your screen when you shoot commons from far).  
+
 ## 1) Installing Prerequisites
 
 Login as `root` on your server, put the script below in a file named `install_pre` and run it as a bash script: `bash install_pre`.
