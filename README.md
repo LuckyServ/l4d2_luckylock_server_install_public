@@ -7,7 +7,7 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - Advanced crash logs thanks to [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703&)
 - `!mix` command for team selection
 - Ready-up menu that doesn't completely hide the chat
-- Extra configs
+- Extra configs (hit me up if you want me to add your config to this)
 
 # Configs
 
