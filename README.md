@@ -30,11 +30,11 @@ Login as `root` on your server, put the script below in a file named `install_pr
 
 ``` bash
 dpkg --add-architecture i386 # enable multi-arch
-apt-get update && apt-get upgrade
-apt-get install libc6:i386 # install base 32bit libraries
-apt-get install lib32z1
-apt-get install git
-apt-get install unzip
+apt-get update -y && apt-get upgrade -y
+apt-get install -y libc6:i386 # install base 32bit libraries
+apt-get install -y lib32z1
+apt-get install -y git
+apt-get install -y unzip
 
 adduser steam
 usermod -aG sudo steam
