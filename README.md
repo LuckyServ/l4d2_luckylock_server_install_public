@@ -64,6 +64,13 @@ git clone https://github.com/LuckyServ/l4d2_luckylock_server_install_public.git
 cp -r l4d2_luckylock_server_install_public/* l4d2/
 
 ln -s l4d2/addons/sourcemod/configs/admins_simple.ini admins_simple.ini
+
+printf "%s\n" \
+"#!/bin/bash" \
+"pkill srcds_" \
+"~/Steam/steamapps/common/l4d2/srcds_run -tickrate 100 +map "c9m1_alleys" +sv_clockcorrection_msecs 15 -timeout 10 -port 27015 +precache_all_survivors 1 &>> servLog &" \
+> s
+chmod u+x s
 ```
 
 ## 3) Editing Configuration Files
@@ -73,16 +80,6 @@ ln -s l4d2/addons/sourcemod/configs/admins_simple.ini admins_simple.ini
 - Edit `l4d2/addons/sourcemod/config/admins_simple.ini` and add yourself as admin instead of me.
 
 ## 4) Starting the Server
-
-Save this below as a file named `s` in your home directory.  
-
-``` bash
-#!/bin/bash
-pkill srcds_
-~/Steam/steamapps/common/l4d2/srcds_run -tickrate 100 +map "c9m1_alleys" +sv_clockcorrection_msecs 15 -timeout 10 -port 27015 +precache_all_survivors 1 &>> servLog &
-```
-
-Type in the command `chmod u+x s`.  
 
 To start / restart the server, simply do: `./s`.
 
