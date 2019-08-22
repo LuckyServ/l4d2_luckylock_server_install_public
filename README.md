@@ -79,7 +79,7 @@ Save this below as a file named `s` in your home directory.
 ``` bash
 #!/bin/bash
 pkill srcds_
-~/Steam/steamapps/common/l4d2/srcds_run -tickrate 100 +map "c9m1_alleys" -maxplayers 10 +sv_clockcorrection_msecs 15 -timeout 10 -port 27015 +precache_all_survivors 1 &>> servLog &
+~/Steam/steamapps/common/l4d2/srcds_run -tickrate 100 +map "c9m1_alleys" +sv_clockcorrection_msecs 15 -timeout 10 -port 27015 +precache_all_survivors 1 &>> servLog &
 ```
 
 Type in the command `chmod u+x s`.  
