@@ -97,4 +97,15 @@
 			"name" "1v1 Scavhunt"
 		}
 	}
+	"Hard Coop"
+	{
+		"gauntlet"
+		{
+			"name" "Gauntlet (!playermode)"
+		}
+		"gauntlet_survival"
+		{
+			"name" "Gauntlet Survival"
+		}
+	}
 }
