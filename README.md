@@ -15,10 +15,11 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - ZoneMod 1.9.4
 - Apex 1.1.2
 - Equilibrium 3.0c
-- Promod Elite
+- Promod Elite 1.1
+- OpenMod 2
 - Scavhunt
 - Scavogl
-- OpenMod 2
+- HardCoop
 
 # Install Steps
 
