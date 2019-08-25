@@ -76,7 +76,7 @@ public void OnClientPutInServer(int client)
 
 public Action OnPlayerRunCmd(int client)
 {	
-	if (IsSurvivor(client) && IsClientConnected(client) && IsClientInGame(client) && !IsFakeClient(client))
+	if (IsSurvivor(client) && IsClientConnected(client) && !IsFakeClient(client))
 	{
 		GetClientEyePosition(client, g_vecOldWeaponShootPos[client]);
 		/*
