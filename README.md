@@ -65,6 +65,8 @@ git clone https://github.com/LuckyServ/l4d2_luckylock_server_install_public.git
 cp -r l4d2_luckylock_server_install_public/* l4d2/
 
 ln -s l4d2/addons/sourcemod/configs/admins_simple.ini admins_simple.ini
+ln -s l4d2/addons/sourcemod/plugins/ plugins
+ln -s l4d2/addons/sourcemod/configs/matchmodes.txt matchmodes.txt
 
 printf "%s\n" \
 "#!/bin/bash" \
