@@ -1,5 +1,12 @@
 "MatchModes"
 {
+	"NextMod 1.0.1"
+	{
+		"nextmod"
+		{
+			"name" "4v4 NextMod"
+		}
+	}
 	"ZoneMod 1.9.4"
 	{
 		"zonemod"

@@ -12,6 +12,7 @@ This repository contains all the files for a clean L4D2 competitive server updat
 
 # Configs
 
+- NextMod 1.0.1
 - ZoneMod 1.9.4
 - Apex 1.1.2
 - Equilibrium 3.0c
