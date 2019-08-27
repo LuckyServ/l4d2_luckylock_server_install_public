@@ -10,6 +10,8 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - Extra configs (hit me up if you want me to add your config to this)
 - Easy custom maps installation (bottom of this README)
 
+---
+
 # Configs
 
 - NextMod 1.0.1
@@ -21,6 +23,8 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - Scavhunt
 - Scavogl
 - HardCoop
+
+---
 
 # Install Steps
 
@@ -42,7 +46,7 @@ adduser steam
 usermod -aG sudo steam
 ```
 
-## 2) Installing the L4D2 Server
+## 2) Install the L4D2 Server
 
 Login as `steam` on your server, put the script below in a file named `install_l4d2` and run it as a bash script: `bash install_l4d2`
 
@@ -77,17 +81,17 @@ printf "%s\n" \
 chmod u+x s
 ```
 
-## 3) Editing Configuration Files
+## 3) Edit Configuration Files
 
 - Edit `l4d2/cfg/server.cfg` to your preferences.  
 - Edit `l4d2/addons/sourcemod/configs/core.cfg` and put your own SteamID64 for `MinidumpAccount`. You can view your crash reports at [this website](https://crash.limetech.org/).
 - Edit `l4d2/addons/sourcemod/config/admins_simple.ini` and add yourself as admin instead of me.
 
-## 4) Starting the Server
+## 4) Start the Server
 
 To start / restart the server, simply do: `./s`.
 
-# Custom maps
+## 5) Install Custom Maps (optional)
 
 Navigate to your addons folder: `cd l4d2/addons` and put the script below in a file named `install_maps` and run it as a bash script: `bash install_maps`
 
