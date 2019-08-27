@@ -10,9 +10,7 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - Extra configs (hit me up if you want me to add your config to this)
 - Easy custom maps installation (bottom of this README)
 
----
-
-# Configs
+## Configs
 
 - NextMod 1.0.1
 - ZoneMod 1.9.4
@@ -24,13 +22,11 @@ This repository contains all the files for a clean L4D2 competitive server updat
 - Scavogl
 - HardCoop
 
----
-
-# Install Steps
+## Install Steps
 
 First of all, make sure your server is running **Ubuntu 18.04** or earlier. A L4D2 server on Ubuntu 19 is glitchy (you will see blood coming out of your screen when you shoot commons from far).  
 
-## 1) Installing Prerequisites
+### 1) Installing Prerequisites
 
 Login as `root` on your server, put the script below in a file named `install_pre` and run it as a bash script: `bash install_pre`.
 
@@ -46,7 +42,7 @@ adduser steam
 usermod -aG sudo steam
 ```
 
-## 2) Install the L4D2 Server
+### 2) Install the L4D2 Server
 
 Login as `steam` on your server, put the script below in a file named `install_l4d2` and run it as a bash script: `bash install_l4d2`
 
@@ -81,17 +77,17 @@ printf "%s\n" \
 chmod u+x s
 ```
 
-## 3) Edit Configuration Files
+### 3) Edit Configuration Files
 
 - Edit `l4d2/cfg/server.cfg` to your preferences.  
 - Edit `l4d2/addons/sourcemod/configs/core.cfg` and put your own SteamID64 for `MinidumpAccount`. You can view your crash reports at [this website](https://crash.limetech.org/).
 - Edit `l4d2/addons/sourcemod/config/admins_simple.ini` and add yourself as admin instead of me.
 
-## 4) Start the Server
+### 4) Start the Server
 
 To start / restart the server, simply do: `./s`
 
-## 5) Install Custom Maps (optional)
+### 5) Install Custom Maps (optional)
 
 Navigate to your addons folder: `cd l4d2/addons` and put the script below in a file named `install_maps` and run it as a bash script: `bash install_maps`
 
