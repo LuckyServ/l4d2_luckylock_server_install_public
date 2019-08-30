@@ -71,7 +71,7 @@ ln -s l4d2/addons/sourcemod/configs/matchmodes.txt matchmodes.txt
 
 printf "%s\n" \
 "#!/bin/bash" \
-"pkill srcds_" \
+"pkill -9 srcds_" \
 "~/Steam/steamapps/common/l4d2/srcds_run -tickrate 100 +map "c9m1_alleys" +sv_clockcorrection_msecs 15 -timeout 10 -port 27015 +precache_all_survivors 1 &>> servLog &" \
 > s
 chmod u+x s
@@ -95,4 +95,25 @@ Navigate to your addons folder: `cd l4d2/addons` and put the script below in a f
 wget http://192.223.24.83/AllMapsInOneZipFile.zip
 unzip AllMapsInOneZipFile.zip -d .
 rm -f AllMapsInOneZipFile.zip
+```
+
+## Update your servers to the latest version
+
+Login as `steam` on your server, put the script below in a file named `update` and run it as a bash script: `bash update`
+
+``` bash
+pkill -9 srcds_
+cd ~/l4d2_luckylock_server_install_public
+git pull
+rm myhost.txt
+rm mymotd.txt
+rm cfg/server.cfg
+rm addons/sourcemod/configs/admins_simple.ini
+rm addons/sourcemod/configs/core.cfg
+rm -rf ../l4d2/addons/sourcemod/plugins/
+rm -rf ../l4d2/cfg/cfgogl/
+cp -r * ../l4d2/
+git reset HEAD --hard
+cd ~
+./s
 ```
