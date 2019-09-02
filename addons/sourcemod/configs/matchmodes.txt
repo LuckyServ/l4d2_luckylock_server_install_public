@@ -1,6 +1,6 @@
 "MatchModes"
 {
-	"NextMod 1.0.1"
+	"NextMod 1.0.2"
 	{
 		"nextmod"
 		{
