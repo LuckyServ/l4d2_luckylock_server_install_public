@@ -6,6 +6,18 @@
 		{
 			"name" "4v4 NextMod"
 		}
+		"nextmod3v3"
+		{
+			"name" "3v3 NextMod"
+		}
+		"nextmod2v2"
+		{
+			"name" "2v2 NextMod"
+		}
+		"nextmod1v1"
+		{
+			"name" "1v1 NextMod"
+		}
 	}
 	"ZoneMod 1.9.4"
 	{
