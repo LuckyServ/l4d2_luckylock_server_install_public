@@ -119,7 +119,7 @@ To start / restart the server, simply do: `./s`
 Navigate to your addons folder: `cd l4d2/addons`, put the script below in a file named `install_maps` and run it as a background job: `bash install_maps &`. This allows you to terminate the SSH connection and the job will still complete.
 
 ``` bash
-wget http://192.223.24.83/AllMapsInOneZipFile.zip
+wget http://192.223.24.83/maps/AllMapsInOneZipFile.zip
 unzip AllMapsInOneZipFile.zip -d .
 rm -f AllMapsInOneZipFile.zip
 ```
