@@ -1,10 +1,14 @@
 "MatchModes"
 {
-	"NextMod 1.0.3"
+	"NextMod 1.0.4"
 	{
 		"nextmod"
 		{
 			"name" "4v4 NextMod"
+		}
+		"nextmodpug"
+		{
+			"name" "4v4 NextMod (Pug)"
 		}
 		"nextmod3v3"
 		{
