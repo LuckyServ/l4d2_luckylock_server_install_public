@@ -1,26 +1,6 @@
 # L4D2 Luckylock Server Install
 
-This repository contains all the files for a clean L4D2 competitive server updated to **SourceMod 1.9.0.6281**. It contains files from the [L4D2 Competitive Rework](https://github.com/SirPlease/L4D2-Competitive-Rework) but the missing / broken plugins have been fixed. It also contains a few extra features such as:
-
-- Installation steps (below)
-- Automatic server restart after every game (you can do a manual restart with `!rs`)
-- Advanced crash logs thanks to [Accelerator](https://forums.alliedmods.net/showthread.php?t=277703&)
-- `!mix` command for team selection (`!stopmix` to stop the mix process at any time)
-- Ready-up menu that doesn't completely hide the chat
-- Extra configs (hit me up if you want me to add your config to this)
-- Easy custom maps installation (bottom of this README)
-
-## Configs
-
-- NextMod 1.0.4
-- ZoneMod 1.9.4
-- Apex 1.1.2
-- Equilibrium 3.0c
-- Promod Elite 1.1
-- OpenMod 2
-- Scavhunt
-- Scavogl
-- HardCoop
+This repository now contains outdated files. Use the [L4D2 Competitive Rework](https://github.com/SirPlease/L4D2-Competitive-Rework) instead. This guide now serves as my personal reference for server install scripts.
 
 ## Install Steps
 
@@ -66,14 +46,14 @@ source .bashrc
 # Setup main l4d2 shortcut
 ln -s Steam/steamapps/common/l4d2/left4dead2/ l4d2
 
-# Install files from this repository
-git clone https://github.com/LuckyServ/l4d2_luckylock_server_install_public.git
-cp -r l4d2_luckylock_server_install_public/* l4d2/
-
 # Setup useful shortcuts
 ln -s l4d2/addons/sourcemod/configs/admins_simple.ini admins_simple.ini
 ln -s l4d2/addons/sourcemod/plugins/ plugins
 ln -s l4d2/addons/sourcemod/configs/matchmodes.txt matchmodes.txt
+
+# Install files from the rework repository
+git clone https://github.com/SirPlease/L4D2-Competitive-Rework.git
+cp -r L4D2-Competitive-Rework/* l4d2/
 
 # Create server start / restart script
 printf "%s\n" \
@@ -83,25 +63,10 @@ printf "%s\n" \
 > s
 chmod u+x s
 
-# Create server update script
-printf "%s\n" \
-"#!/bin/bash" \
-"pkill -9 srcds_" \
-"cd ~/l4d2_luckylock_server_install_public" \
-"git pull" \
-"rm myhost.txt" \
-"rm mymotd.txt" \
-"rm cfg/server.cfg" \
-"rm addons/sourcemod/configs/admins_simple.ini" \
-"rm addons/sourcemod/configs/core.cfg" \
-"rm -rf ../l4d2/addons/sourcemod/plugins/" \
-"rm -rf ../l4d2/cfg/cfgogl/" \
-"cp -r * ../l4d2/" \
-"git reset HEAD --hard" \
-"cd ~" \
-"./s" \
-> update
-chmod u+x update
+# TODO
+# - Add l4d2_server_restarter and l4d2_mix plugins
+# - Add update script
+# - Add Accelerator (https://forums.alliedmods.net/showthread.php?t=277703&)
 ```
 
 ### 3) Edit Configuration Files
@@ -119,7 +84,7 @@ To start / restart the server, simply do: `./s`
 Navigate to your addons folder: `cd l4d2/addons`, put the script below in a file named `install_maps` and run it as a background job: `bash install_maps &`. This allows you to terminate the SSH connection and the job will still complete.
 
 ``` bash
-wget http://192.223.24.83/maps/AllMapsInOneZipFile.zip
+wget https://cedapug.com/maps/AllMapsInOneZipFile.zip
 unzip AllMapsInOneZipFile.zip -d .
 rm -f AllMapsInOneZipFile.zip
 ```
